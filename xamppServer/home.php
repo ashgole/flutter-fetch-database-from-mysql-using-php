@@ -7,8 +7,7 @@ $dbpass = "";
 $dbname= "onrentmy";
 $myConn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die("Database not found...");
 		
-// retrieve data in for loop from mysql database		
-include_once $_SERVER['DOCUMENT_ROOT'].'/onrent/database/database.php'; 
+// retrieve data in for loop from mysql database	 
 $q1="SELECT * from ownerdata";
 $show = null; 
 $result=mysqli_query($myConn,$q1); 
