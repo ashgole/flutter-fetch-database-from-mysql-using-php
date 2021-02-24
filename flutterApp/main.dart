@@ -10,16 +10,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Demo2(),
+      home: Home(),
     );
   }
 }
 
-class Demo2 extends StatefulWidget {
-  _DemoPageState createState() => _DemoPageState();
+class Home extends StatefulWidget {
+  _HomeState createState() => _HomeState();
 }
 
-class _DemoPageState extends State<Demo2> {
+  @override
+  void initState() {
+    super.initState();
+    _ShowJsonList();
+  }
+
+class _DemoPageState extends State<Home> {
   final GlobalKey<RefreshIndicatorState> _refreshIndicatorKey =
       new GlobalKey<RefreshIndicatorState>();
 
