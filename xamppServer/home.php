@@ -4,11 +4,11 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = ""; 
-$dbname= "onrentmy";
+$dbname= "databaseName";
 $myConn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname) or die("Database not found...");
 		
 // retrieve data in for loop from mysql database	 
-$q1="SELECT * from ownerdata";
+$q1="SELECT * from tableName";
 $show = null; 
 $result=mysqli_query($myConn,$q1); 
 while ($row = mysqli_fetch_array($result)) 
