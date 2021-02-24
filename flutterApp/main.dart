@@ -24,9 +24,14 @@ class _DemoPageState extends State<Demo2> {
       new GlobalKey<RefreshIndicatorState>();
 
   //--*
-  Future<List<ShowJson>> _ShowJsonList() async {
-    // prefs.setStringList("key", sd); //share
-    var data = await http.get("http://192.168.43.58/onrent/process/home.php");
+  Future<List<ShowJson>> _ShowJsonList() async { 
+    //******************** imp ***********
+    //open xampp server
+    // start php and mysql server
+    // create folder #home in htdocs folder of xampp server
+    // paste #home.php file
+    var data = await http.get("http://<your comuter ip address>/home/home.php");
+    
     var jsonData = json.decode(data.body);
     List<ShowJson> cJF1 = [];
     for (var i in jsonData) {
