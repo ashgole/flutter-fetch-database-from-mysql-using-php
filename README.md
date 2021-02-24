@@ -5,6 +5,6 @@ i assume that you hasve already created folder on local xampp server [ your proj
 
 1. paste main.dart file from flutterApp... in your lib folder
 2. paste home.php file from xamppServer... in your htdocs folder
-3. modify some lines i have commented for better understanding with #imp 
+3. modify some lines i have commented for better understanding with #change 
 
 soon i will create article on medium about this example
