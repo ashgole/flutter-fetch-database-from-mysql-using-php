@@ -7,7 +7,8 @@ i assume that you hasve already created folder on local xampp server [ your proj
 2. paste home.php file from xamppServer... in your htdocs folder
 3. modify some lines i have commented for better understanding with #change 
 
-4.output
+4.output screenshot
+
 ![alt text](https://github.com/ashgole/flutter-fetch-database-from-mysql-using-php/blob/main/images/flutter_app_screenshot.jpeg) 
 
 
